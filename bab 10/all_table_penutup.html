@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            border-spacing: 0;
+            border: 1px solid black;
+            width: 40%;
+        }
+        th, td{
+            padding: 10px 20px;
+            border: 1px black solid;
+        }
+        th{
+            background-color: #87f97b;
+        }
+        tr:nth-child(even){
+            background-color: #ededed;
+        }
+        tr:nth-child(odd){
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h3>Table HTML</h3>
+    <table>
+        <caption>Tabel Simpanan Peserta</caption>
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Nama Peserta</th>
+                <th>Alamat</th>
+                <th>Simpanan</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total</td>
+                <td>3.000.000</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>1.</td>
+                <td>Andi Suryono</td>
+                <td>Jl. Kemerdekaan No.17</td>
+                <td>1.000.000</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>Ujang Saepuddin</td>
+                <td>Jl. Anggur No.107</td>
+                <td>500.000</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>Dede Misbah</td>
+                <td>Jl. Djati No.10</td>
+                <td>700.000</td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>Muhammad Ikhsan</td>
+                <td>Jl. Cibasale No.197</td>
+                <td>600.000</td>
+            </tr>
+            <tr>
+                <td>5.</td>
+                <td>Iqbal Garent</td>
+                <td>Jl. Cimanggis No.37</td>
+                <td>200.000</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
