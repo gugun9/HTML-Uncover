@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Datalist</title>
+</head>
+<body>
+    <datalist id="list_kota">
+        <option value="Brebes">
+        <option value="Majalengka">
+        <option value="Solo">
+        <option value="Cirebon">
+        <option value="Indramayu">
+        <option value="Subang">
+        <option value="Tegal">
+        <option value="Purwokerto">
+    </datalist>
+    <form action="prosesform.php" method="get">
+        <p>Kota Kelahiran: <input type="text" name="kota" list="list_kota"></p>
+        <p><input type="submit" value="Kirim Data"></p>
+    </form>
+</body>
+</html>
