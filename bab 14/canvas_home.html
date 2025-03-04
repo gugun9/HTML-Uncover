@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Home</title>
+    <style>
+        canvas{
+            border: 1px solid brown;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="kertas_gambar" width="500" height="300"></canvas>
+    <script>
+        let canvasku = document.getElementById("kertas_gambar");
+        let context = canvasku.getContext("2d");
+        context.lineWidth = 10;
+
+        // Dinding
+        context.strokeRect(75, 140, 150, 110);
+
+        // Pintu
+        context.fillRect(130, 190, 40, 60);
+
+        // Atap
+        context.beginPath();
+        context.moveTo(50, 140);
+        context.lineTo(150, 60);
+        context.lineTo(250, 140);
+        context.closePath();
+        context.stroke();
+    </script>
+</body>
+</html>

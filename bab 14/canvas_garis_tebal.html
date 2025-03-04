@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Garis Tebal</title>
+    <style>
+        canvas{
+            border: 1px solid green;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="kertas_garis" width="500" height="300"></canvas>
+    <script>
+        let canvasku = document.getElementById("kertas_gambar");
+        let context = canvasku.getContext("2d");
+        context.lineWidth = 20;
+        context.strokeStyle = "rgb(100, 180, 80)";
+        context.moveTo(10,10);
+        context.lineTo(400,200);
+        context.stroke();
+    </script>
+</body>
+</html>

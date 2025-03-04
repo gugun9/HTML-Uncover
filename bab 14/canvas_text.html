@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Text</title>
+    <style>
+        canvas{
+            border: 1px solid goldenrod;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="kertas_gambar" width="500" height="300"></canvas>
+    <script>
+        let canvasku = document.getElementById("kertas_gambar");
+        let context = canvasku.getContext("2d");
+        context.font = 'bold 25pt Calibri';
+        context.fillText('Belajar HTML5', 30, 100);
+    </script>
+</body>
+</html>
