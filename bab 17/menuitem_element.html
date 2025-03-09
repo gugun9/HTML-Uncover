@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menuitem Element</title>
+</head>
+<body>
+    <p contextmenu="popup-menu">
+        Klik kanan paragraf ini...
+    </p>
+    <menu type="context" id="popup-menu">
+        <menuitem type="checkbox" checked="true">
+            Pilihan 1
+        </menuitem>
+        <menuitem type="radio" name="group1" checked="true">
+            Radio button 1
+        </menuitem>
+        <menuitem type="radio" name="group1">
+            Radio button 2
+        </menuitem>
+        <menuitem type="command" label="Pesan salam.." onclick="alert('Hello..')">
+            Alert
+        </menuitem>
+    </menu>
+</body>
+</html>
