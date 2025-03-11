@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal Javascript</title>
+</head>
+<body>
+    <h1>Belajar JavaScript</h1>
+    <button id="tombol"> Click me!</button>
+    <script>
+        function pesan(){
+            alert('Saya Sedang Belajar JavaScript');
+        }
+        window.onload = function()
+        {
+            let a= document.getElementById("tombol");
+            a.addEventListener("click", pesan);
+        }
+    </script>
+</body>
+</html>

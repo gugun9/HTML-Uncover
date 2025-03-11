@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Javascript</title>
+    <script type="text/javascript">
+        function tambah_semangat()
+        {
+            var a = document.getElementById("div_semangat");
+            a.innerHTML+= "<p>Sedang Belajar JavaScript, Semangat...!!!</p>"; 
+        }
+    </script>
+</head>
+<body>
+    <h1>Belajar JavaScript</h1>
+    <p> Saya sedang mencoba belajar JavaScript</p>
+    Klik salah satu tombol untuk tambah semangat :)
+    <button id="tambah" onclick="tambah_semangat()">Click</button>
+    <button id="tambah" ondblclick="tambah_semangat()">Double Click</button>
+    <button id="tambah" onmouseover="tambah_semangat()">MouseOver</button>
+    <div id="div_semangat"></div>
+</body>
+</html>
